@@ -1,0 +1,70 @@
+.show-btn {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+}
+
+@media (min-width: 800px) {
+  .show-btn {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.btn:last-child {
+  font-size: 40px;
+  color: white;
+  background-color: #32cd32;
+}
+
+.clr {
+  color: #ff6325;
+}
+
+.exp {
+  color: #32cd32;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  margin: 6px auto;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #f4fff4;
+  border: 0px;
+  user-select: none;
+}
+
+@media (min-width: 800px) {
+  .btn:hover {
+    background-color: #90ee90;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+  }
+
+  .btn:active,
+  .btn.touched {
+    background-color: #90ee90;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+  }
+
+  .btn:active {
+    transform: scale(0.9);
+  }
+
+  .btn.touched {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn:active {
+    transform: scale(0.9);
+  }
+}
